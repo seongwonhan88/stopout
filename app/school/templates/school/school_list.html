@@ -1,0 +1,7 @@
+{% block content %}
+<h1>school list</h1>
+
+    {% for school in schools %}
+        <a href="{% url school_detail id=school.school_id%}"> {{ schools.name }} </a>
+    {% endfor %}
+{% endblock%}
